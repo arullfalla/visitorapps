@@ -1,0 +1,105 @@
+/* Color */
+
+:root {
+    --dark-color: #3F3D56;
+    --grey-color: #575A89;
+    --blue-color: #6C63FF;
+    --pink-color: #FBBEBE;
+    --white-color: #ffffff;
+    --green-color: #41B8AC;
+
+    --blue-hover-color: #6C63FF;
+    --pink-hover-color: #FBBEBE;
+}
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.wrapper {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+
+}
+
+
+/* Header - Navigation */
+
+.desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--dark-color);
+    position: fixed;
+    width: 1440px;
+    height: 93px;
+    margin: 0 0 22.8px;
+
+
+}
+
+.desktop-nav .menu-items {
+    display: flex;
+    list-style: none;
+}
+
+.desktop-nav .menu-items li {
+    margin: 0 79px;
+}
+
+.desktop-nav .menu-items li a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+}
+
+.desktop-nav .menu-items li a.active::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: var(--green-color);
+    left: 0;
+    bottom: -14px;
+}
+
+/* Animation */
+/* .desktop-nav {    
+
+animation: fadeDown 1000ms;
+opacity: 0;
+
+} */
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Body Tengah */
+
+.body-tengah {
+  width: 1440px;
+  height: 825px;
+  margin: 93px 0 0;
+  padding: 32.2px 0 6px 351px;
+  background-color: #252525;
+}
+
+

@@ -1,0 +1,384 @@
+/* Responsive Check */
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+
+:root {
+    --dark-color: #3F3D56;
+    --grey-color: #575A89;
+    --blue-color: #6C63FF;
+    --pink-color: #FBBEBE;
+    --white-color: #ffffff;
+    --green-color: #41B8AC;
+
+    --blue-hover-color: #6C63FF;
+    --pink-hover-color: #FBBEBE;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Frame */
+.Home-Landing-Page {
+    width: 1440px;
+    height: 1024px;
+  }
+
+
+/* Top Section */
+.Top-Section {
+    width: 1440px;
+    height: 93px;
+    /* margin: 0 0 22.8px; */
+    background-color: #131313;
+  }
+
+  .desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--dark-color);
+    position: fixed;
+    width: 1440px;
+    height: 93px;
+    margin: 0 0 22.8px;
+
+
+}
+
+.desktop-nav .menu-items {
+    display: flex;
+    list-style: none;
+}
+
+.desktop-nav .menu-items li {
+    margin: 0 79px;
+}
+
+.desktop-nav .menu-items li a {
+    text-decoration: none;
+    color: #b0a8a8;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+}
+
+.desktop-nav .menu-items li a.active::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: var(--green-color);
+    left: 0;
+    bottom: -14px;
+}
+
+
+/* Middle Section */
+.Middle-Section{
+    width: 1440px;
+    height: 825px;
+    /* margin: 93px 0 0;
+    padding: 32.2px 0 6px 351px; */
+    background-color: #252525;
+    background-image: url("./images/illustration_welcome.svg");
+    background-position: right bottom; /*Positioning*/
+    background-repeat: no-repeat; /*Prevent showing multiple background images*/
+}
+
+.shape_belakang_barcode {
+    /* width: 585.4px;
+    height: 460px; */
+    /* margin: 448.2px 503.6px 0px 351px; */
+    /* object-fit: contain; */
+    text-align: center;
+    display: block;
+    
+  }
+
+.shape_belakang_barcode img{
+    max-width: 100%;
+    height: auto;
+}
+
+.tulisan-scan {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+input[type=text], select {
+    width: 150%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+
+
+
+
+.Middle-Section h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffffff;
+    float: center;
+  }
+
+/* Bottom Section */
+
+.Bottom-Section {
+    width: 1440px;
+    height: 106px;
+    /* margin: 802.2px 0 0;
+    padding: 44px 913px 43px 190px; */
+    background-color: #131313;
+}
+
+.Bottom-Section h5 {
+    color: #b0a8a8;
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+
+
+
+/* Visitor Page */
+
+.visitor-mid {
+    width: 1440px;
+    height: 812px;
+    padding: 36px 42px 23px 43px;
+    background-color: #252525;
+}
+
+.visitor-inside {
+        width: 1355px;
+        height: 753px;
+        background-color: #292929;
+}
+
+
+.title-column {
+    display: flex;
+    list-style: none;
+}
+
+.title-column li {
+    margin: 0 50px;
+}
+
+.title-column li a {
+    text-decoration: none;
+    color: #4e4e4e;
+    font-size: 20px;
+    position: relative;
+}
+
+
+/* end visitor list */
+
+
+/* Policy */
+.policy-mid {
+    width: 1440px;
+    height: 813px;
+    padding: 22px 0 230px 457px;
+    background-color: #252525;
+    background-image: url("./images/undraw_Terms_re_6ak4\ 1.svg");
+    background-position: left bottom; /*Positioning*/
+    background-repeat: no-repeat; /*Prevent showing multiple background images*/
+
+}
+
+
+.paragraf-policy p{
+    width: 983px;
+    height: 561px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+/* End of Policy Page */
+
+
+
+
+/* Contact Us Page */
+.contact-mid {
+  width: 1440px;
+  height: 813px;
+  padding: 114px 0 0.3px 50px;
+  background-color: #252525;
+  background-image: url("./images/undraw_contact_us_15o2\ 1.svg");
+  background-position: right bottom; /*Positioning*/
+  background-repeat: no-repeat; /*Prevent showing multiple background images*/
+
+}
+
+.content-contact {
+    width: 629px;
+    height: 297px;
+    margin: 0 648.5px 401.7px 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+
+
+/*End Of Contact Us Page */
+
+.isibarcode-mid {
+  width: 1440px;
+  height: 813px;
+  /* padding: 114px 0 0.3px 50px; */
+  background-color: #252525;
+}
+
+.body_kiri_rec {
+    width: 720px;
+    height: 812px;
+    background-color: #252525;
+    float: left;
+    background-image: url("./images/Vector.svg");
+    background-position: left top; /*Positioning*/
+    background-repeat: no-repeat; /*Prevent showing multiple background images*/
+
+}
+
+
+.tempat-foto {
+        width: 400px;
+        height: 400px;
+        margin: 175px 0 30px 100px;
+        border-radius: 20px;
+        border: 4px solid whitesmoke;
+}
+
+.button-ambil {
+        width: 173px;
+        height: 60px;
+        margin: 10px 20px 0 100px;
+        padding: 18px 22px 17px 21px;
+        border-radius: 30px;
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2);
+        background-color: #c4d856;
+        float: left;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #000000;
+        display: inline-block;
+      }
+
+.button-reset {
+    width: 173px;
+    height: 60px;
+    margin: 10px 40px 0 34px;
+    padding: 18px 22px 17px 21px;
+    border-radius: 30px;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2);
+    background-color: #c4d856;
+    float: left;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    display: inline-block;
+
+
+}      
+
+
+
+.body_kanan_rec{
+  width: 720px;
+  height: 812px;
+  background-color: #252525;
+  background-image: url("./images/Group\ 53.svg");
+  background-position: right bottom; /*Positioning*/
+  background-repeat: no-repeat; /*Prevent showing multiple background images*/
+  display: inline;
+  float: left;
+}
+
+
+
+.body_kanan_rec form{
+    margin: 75px;
+}
+
+
+.body_kanan_rec label{
+  width: 210px;
+  height: 32px;
+  margin: 0 416px 11px 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+
+}
+
+.body_kanan_rec input{
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
